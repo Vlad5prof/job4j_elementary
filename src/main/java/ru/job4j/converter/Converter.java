@@ -21,6 +21,7 @@ public class Converter {
         return result;
     }
 
+
     public static void main(String[] args) {
         float euro = Converter.rubleToEuro(250);
         System.out.println("250 rubles are " + euro + " euro.");
