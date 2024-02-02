@@ -1,7 +1,5 @@
 package ru.job4j.calculator;
-
 public class MathFunction {
-
     public static int func1(int x) {
         return x * x + 3;
     }
@@ -15,4 +13,3 @@ public class MathFunction {
         System.out.println(result3);
     }
 }
-
