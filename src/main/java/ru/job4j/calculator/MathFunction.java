@@ -3,7 +3,7 @@ package ru.job4j.calculator;
 public class MathFunction {
 
     public static int func1(int x) {
-        return x * x +3;
+        return x * x + 3;
     }
 
     public static int func2(int x) {
