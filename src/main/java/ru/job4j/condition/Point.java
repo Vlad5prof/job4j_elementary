@@ -7,8 +7,7 @@ public class Point {
         double resultP = Math.pow (resultMX, 2);
         double resultP2 = Math.pow (resultMY, 2);
         double resultS = resultP + resultP2;
-        double result = Math.sqrt(resultMX);
-        //double result = Math.sqrt(double resultS);
+        double result = Math.sqrt(resultS);
         return result;
     }
 
