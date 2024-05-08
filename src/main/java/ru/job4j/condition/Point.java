@@ -4,11 +4,10 @@ public class Point {
     public static double distance(int x, int y, int x2, int y2) {
         int resultMX = x2 - x;
         int resultMY = y2 - y;
-        double resultP = Math.pow (resultMX, 2);
-        double resultP2 = Math.pow (resultMY, 2);
+        double resultP = Math.pow(resultMX, 2);
+        double resultP2 = Math.pow(resultMY, 2);
         double resultS = resultP + resultP2;
-        double result = Math.sqrt(resultS);
-        return result;
+        return Math.sqrt(resultS);
     }
 
     public static void main(String[] args) {
