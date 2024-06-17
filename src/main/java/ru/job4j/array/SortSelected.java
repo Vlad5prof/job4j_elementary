@@ -1,8 +1,5 @@
 package ru.job4j.array;
 
-import org.jetbrains.annotations.Contract;
-import org.jetbrains.annotations.NotNull;
-
 public class SortSelected {
     public static int[] sort(int[] data) {
         for (int i = 0; i < data.length; i++) {
@@ -35,8 +32,7 @@ public class SortSelected {
             }
 
             public class SwitchArray {
-                @Contract("_, _, _ -> param1")
-                public static int @NotNull [] swap(int[] array, int source, int dest) {
+                public static int[] swap(int[] array, int source, int dest) {
                     int temp = array[source];
                     array[source] = array[dest];
                     array[dest] = temp;
