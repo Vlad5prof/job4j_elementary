@@ -8,7 +8,6 @@ public class SortSelected {
         for (int i = 0; i < data.length; i++) {
             int min = MinDiapason.findMin(data, i, data.length - 1);
             int index = MinDiapason.FindLoop.indexInRange(data, min, i, data.length - 1);
-            // Меняем местами элементы по индексам
             data = MinDiapason.FindLoop.SwitchArray.swap(data, i, index);
         }
         return data;
