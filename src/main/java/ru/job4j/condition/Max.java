@@ -13,5 +13,7 @@ public class Max {
         System.out.println(result);
         result = Max.max(5, 5);
         System.out.println(result);
+        result = Max.max(7, 7);
+        System.out.println(result);
     }
 }

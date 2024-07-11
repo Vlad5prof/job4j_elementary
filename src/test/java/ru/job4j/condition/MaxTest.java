@@ -31,4 +31,13 @@ class MaxTest {
         int expected = 5;
         assertThat(result).isEqualTo(expected);
     }
+
+    @Test
+    void whenMax7To7Then7() {
+        int left = 7;
+        int right = 7;
+        int result = Max.max(left, right);
+        int expected = 7;
+        assertThat(result).isEqualTo(expected);
+    }
 }
