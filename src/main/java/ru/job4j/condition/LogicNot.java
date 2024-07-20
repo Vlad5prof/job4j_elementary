@@ -26,9 +26,21 @@ public class LogicNot {
     }
 
     public static void main(String[] args) {
-        boolean result = notEvenAndPositive(3);
+        boolean result = notEven(3);
         System.out.println(result);
-        result = evenOrNotPositive(-2);
+        result = notEven(2);
+        System.out.println(result);
+        result = isPositive(2);
+        System.out.println(result);
+        result = isPositive(-2);
+        System.out.println(result);
+        result = isEven(2);
+        System.out.println(result);
+        result = isEven(3);
+        System.out.println(result);
+        result = notPositive(2);
+        System.out.println(result);
+        result = notPositive(-2);
         System.out.println(result);
     }
 }
