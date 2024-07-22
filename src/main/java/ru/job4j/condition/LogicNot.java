@@ -14,15 +14,15 @@ public class LogicNot {
     }
 
     public static boolean notPositive(int num) {
-        return !isPositive(num);
+        return num < 0;
     }
 
     public static boolean notEvenAndPositive(int num) {
-        return (!(num % 2 == 0) && num > 0);
+        return notEven(num) && isPositive(num);
     }
 
     public static boolean evenOrNotPositive(int num) {
-        return (num % 2 == 0 || num < 0);
+        return isEven(num) || notPositive(num);
     }
 
     public static void main(String[] args) {
