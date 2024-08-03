@@ -6,8 +6,11 @@ public class ChessBoard {
         if (isValid(x1) && isValid(x2) && isValid(y1) && isValid(y2)) {
             if ((x1 <= x2 && y1 <= y2) || (x1 >= x2 && y1 >= y2)
                     || (x1 > x2 && y1 < y2) || (x1 < x2 && y1 > y2)) {
-                result = Math.abs(x2 - x1);
-                result = result == Math.abs(y2 - y1) ? result : 0;
+                if (Math.abs(x2 - x1) == Math.abs(y2 - y1)) {
+                    result = Math.abs(x2 - x1);
+                } else {
+                    result = 0;
+                }
             }
         }
     return result;
